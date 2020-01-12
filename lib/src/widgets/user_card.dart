@@ -59,6 +59,7 @@ class UserCard extends StatelessWidget {
                 width: 100,
                 height: 100,
                 child: CachedNetworkImage(
+                  fit: BoxFit.cover,
                   imageUrl: user.imageUrl,
                   placeholder: (context, url) => CircularProgressIndicator(),
                   errorWidget: (context, url, error) => Icon(Icons.error),
